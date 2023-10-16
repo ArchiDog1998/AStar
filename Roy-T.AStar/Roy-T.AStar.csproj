@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	<TargetFramework>net7.0-windows</TargetFramework>
     <RootNamespace>Roy_T.AStar</RootNamespace>
     <PackageId>RoyT.AStar</PackageId>
     <Version>3.0.2</Version>
@@ -21,6 +21,10 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Primitives\" />
   </ItemGroup>
 
 </Project>

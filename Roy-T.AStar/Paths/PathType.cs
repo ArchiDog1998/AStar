@@ -1,8 +1,7 @@
-﻿namespace Roy_T.AStar.Paths
+﻿namespace Roy_T.AStar.Paths;
+
+public enum PathType
 {
-    public enum PathType
-    {
-        Complete,
-        ClosestApproach
-    }
+    Complete,
+    ClosestApproach
 }

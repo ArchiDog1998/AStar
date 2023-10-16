@@ -1,13 +1,10 @@
-﻿using Roy_T.AStar.Primitives;
+﻿namespace Roy_T.AStar.Graphs;
 
-namespace Roy_T.AStar.Graphs
+public interface IEdge
 {
-    public interface IEdge
-    {
-        Velocity TraversalVelocity { get; set; }
-        Duration TraversalDuration { get; }
-        Distance Distance { get; }
-        INode Start { get; }
-        INode End { get; }
-    }
+    float TraversalVelocity { get; set; }
+    float TraversalDuration { get; }
+    float Distance { get; }
+    INode Start { get; }
+    INode End { get; }
 }
