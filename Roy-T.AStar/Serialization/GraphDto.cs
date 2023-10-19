@@ -6,9 +6,9 @@ using System.Numerics;
 
 namespace Roy_T.AStar.Serialization;
 
-internal struct GraphDto
+public struct GraphDto
 {
-    internal struct EdgeDto
+    public struct EdgeDto
     {
         public int Start { get; set; }
         public int End { get; set; }
