@@ -32,7 +32,7 @@ public struct GraphDto
         var hashedEdges = new HashSet<IEdge>(edges);
 
         Nodes = hashedNodes.Select(n => n.Position).ToArray();
-        Edges = edges.Select(e => new EdgeDto()
+        Edges = hashedEdges.Select(e => new EdgeDto()
         {
             Start = Array.IndexOf(hashedNodes, e.Start),
             End = Array.IndexOf(hashedNodes, e.End),
