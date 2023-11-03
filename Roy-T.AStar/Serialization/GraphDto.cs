@@ -19,7 +19,7 @@ public struct GraphDto
 
     public EdgeDto[] Edges { get; set; }
 
-    public GraphDto(params INode[] nodes)
+    public GraphDto(IEnumerable<INode> nodes)
     {
         IEnumerable<INode> relatedNodes = Array.Empty<INode>();
         IEnumerable<IEdge> edges = Array.Empty<IEdge>();

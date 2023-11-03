@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Numerics;
 
 namespace Roy_T.AStar.Graphs;
@@ -20,6 +21,8 @@ public sealed class Node : INode
 
     public void Connect(INode node, float traversalVelocity)
     {
+        if (this.Outgoing.Any(edge => edge.End == node)) return;
+
         var edge = new Edge(this, node, traversalVelocity);
         this.Outgoing.Add(edge);
         node.Incoming.Add(edge);
